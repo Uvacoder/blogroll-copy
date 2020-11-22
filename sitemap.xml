@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blogscroll.com/</loc>
+    <loc>https://blogscroll.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blogscroll.com/categories/</loc>
+    <loc>https://blogscroll.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://blogscroll.com/tags/</loc>
+    <loc>https://blogscroll.com/tags/</loc>
   </url>
   
 </urlset>
