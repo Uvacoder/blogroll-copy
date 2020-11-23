@@ -42,12 +42,21 @@
   }
 </script>
 
+<script>
+    function goToRandomPage(){
+        var links = document.getElementById('link-container').getElementsByTagName('a');
+
+        var id = Math.floor(Math.random() * Math.floor(links.length - 1));
+        window.location.href = links[id]['href'];
+    }
+</script>
+
     </head>
     <body>
         <ul>
-    <li class="title-li"><a href="#">BLOGSCROLL</a></li>
-    <li><a href="#">Add Your Site</a></li>
-    <li><a href="#">Surprise Me</a></li>
+    <li class="title-li"><a href="/">BLOGSCROLL</a></li>
+    <li><a href="https://github.com/blogscroll/blogscroll/issues/new?assignees=dend&labels=enhancement&template=suggest-new-site.md&title=%5BSITE+REQUEST%5D">Add Your Site</a></li>
+    <li><a onclick="goToRandomPage();" href="#">Surprise Me</a></li>
 </ul>
 
         <div class="site-title">
@@ -55,7 +64,7 @@
             <p>This is an open directory of personal sites and blogs, maintained entirely <a class="blog-link" href="https://github.com/blogscroll/blogscroll">on GitHub</a>.</p>
             <p>This project was created by <a href="https://den.dev"  class="blog-link">Den Delimarsky</a> in an effort to bring attention to little digital gardens people maintain outside, well - walled gardens.</p>
         </div>
-        <div class="link-container">
+        <div class="link-container" id="link-container">
         
                 
                     <div class="category-container">
